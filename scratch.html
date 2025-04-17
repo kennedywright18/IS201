@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Travel Adventures</title>
+  <link rel="stylesheet" href="css/scratch.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#list-section">Skip to Travel Gallery</a> |
+    <a href="#video">Watch an intro to Lake Powell</a> |
+    <a href="#tableau">Interact with a Map</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>My Travel Adventures</h1>
+    <p>Places I have traveled to, and where I want to go!</p>
+  </div>
+
+  <!-- Info Block 1 -->
+  <div class="info-block" id="list-section">
+    <h2>My Favorite Places:</h2>
+    <ol>
+      <li>Europe
+        <ul>
+          <li>Paris, France</li>
+          <li>London, England</li>
+        </ul>
+      </li>
+      <li>The United States
+        <ul>
+          <li>Hawaii</li>
+          <li>Lake Powell</li>
+          <li>California</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Info Block 2 -->
+  <div class="info-block">
+    <h2>My Travel Gallery</h2>
+    <img src="assets/img/London.JPG" alt="London" class="featured-image">
+    <img src="assets/img/Paris.JPG" alt="Paris" class="featured-image">
+    <img src="assets/img/Lakepowell.JPG" alt="Lake Powell" class="featured-image">
+    <img src="assets/img/Oahu.JPG" alt-="Oahu" class="featured-image">
+    <img src="assets/img/Disneyland.JPG" alt="disneyland"class="featured-image">
+    <img src="assets/img/oahu2.JPG" alt="oahu2" class="featured-image">
+
+  </div>
+
+  <!-- Info Block 3 -->
+  <div class="info-block" id="video">
+    <h2>Watch: Intro to Lake Powell</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/QvNJq4TrUeY?si=j2YTPr_cVjy6nRhz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Tableau Embed -->
+  <div class="info-block" id="tableau">
+    <h2>Interactive: Places i've been, and where I want to go. </h2>
+    <div class="tableauPlaceholder" id="vizContainer" style="position: relative;">
+      <noscript>
+        <a href="#"><img alt="Tableau graph" src="https://public.tableau.com/static/images/JR/JRN3DQRS5/1.png" /></a>
+      </noscript>
+      <object class="tableauViz">
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='path' value='shared/JRN3DQRS5' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/JR/JRN3DQRS5/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+    <script type="text/javascript">
+      var divElement = document.getElementById('vizContainer');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+
+  <footer>
+    <a href="index.html">Back to My Professional Site</a>
+    <br>
+    <a href="webapp.html">Play Trivia</a>
+  </footer>
+
+</body>
+</html>
